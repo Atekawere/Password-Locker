@@ -74,3 +74,6 @@ class TestCredentials(unittest.TestCase):
                 twitter = credential('Mary','Twitter','Jacintaatek','pswd540')
                 twitter.save_credentials()
                 self.assertEqual(len(Credential.credentials_list),2)
+
+            def tearDown(self):
+                
