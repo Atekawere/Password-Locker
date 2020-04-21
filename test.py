@@ -30,11 +30,11 @@ class TestUser(unittest.TestCase):
             self.assertEqual(len(User.users_list),1)
 
 class TestCredentials(unittest.TestCase):
-    '''
-    Test class that defines the test cases for the credentials class behaviors.
-    Args:
-        unittest.TestCase: helps in creating test cases
-    '''
+        '''
+         Test class that defines the test cases for the credentials class behaviors.
+         Args:
+         unittest.TestCase: helps in creating test cases
+         '''
         def test_check_user(self):
             '''
             Function to test whether the login in function check_user works as expected
@@ -46,8 +46,8 @@ class TestCredentials(unittest.TestCase):
 
             for user in User.users_list:
                 if user.first_name == user2.first_name and user.password == user2.password:
-				current_user = user.first_name
-		    return current_user
+                    current_user = user.first_name
+                    return current_user
 
             self.assertEqual(current_user,Credential.check_user(user2.password,user2.first_name))
 
@@ -120,5 +120,3 @@ class TestCredentials(unittest.TestCase):
 
 if __name__ == '__main__':
        unittest.main(verbosity=2
-
-
