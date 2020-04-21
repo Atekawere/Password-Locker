@@ -22,4 +22,16 @@ class TestUser(unittest.TestCase):
             self.assertEqual(self.new_user.last-name, 'At\'ek\'a')
             self.assertEqual(self.new_user.password, 'pswd540')
 
-            
+        def test_save_user(self):
+            '''
+            Test to check if the new users info is saved into the users list
+            '''
+            self.new_user.save_user()
+            self.assertEqual(len(User.users_list),1)
+
+class TestCredentials(unittest.TestCase):
+    '''
+    Test class that defines the test cases for the credentials class behaviors.
+    Args:
+        unittest.TestCase: helps in creating test cases
+    '''               
