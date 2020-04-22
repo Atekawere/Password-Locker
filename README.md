@@ -38,4 +38,4 @@ python 3.6
 . $ python3.6 user_credentials_test.py
 
 ## Licence
-MIT (LICENCE)[ithub.com/Atekawere/Password-Locker/blob/master/LICENCE]
+MIT LICENCE (ithub.com/Atekawere/Password-Locker/blob/master/LICENCE)
